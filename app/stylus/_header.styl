@@ -1,0 +1,73 @@
+header
+    background-size cover
+    filter contrast(90%)
+    width 100%
+    height 100vh
+    top 0
+    left 0
+    position fixed
+    h1.intro-title
+        color #fff
+        text-align center
+        text-shadow 0 0 20px rgba(0,0,0,0.4)
+        font-size 3.7em
+        letter-spacing 0.176em
+        padding-top 15%
+        +below(bp-tablet-landscape)
+            font-size 3em
+            letter-spacing 0.1em
+            padding-top 50%
+        +below(bp-phone)
+            font-size 1.9em
+            letter-spacing 0.1em
+
+    p
+        color #fff
+        text-align center
+        text-shadow 0 0 20px rgba(0,0,0,0.4)
+        letter-spacing 0.5rem
+        font-size 1.4em
+        +below(bp-tablet-landscape)
+            font-size 1.6em
+            letter-spacing 0.1em
+        +below(bp-phone)
+            font-size 1.1em
+            letter-spacing 0.1em
+
+.bg-img 
+    background-image url('https://thalles-marchetti.s3-sa-east-1.amazonaws.com/Website/jellyfish.jpg')
+
+.scroll-arrow {
+    background-image url('../images/svg/scroll-arrow.svg')
+    background-size: contain
+	background-repeat: no-repeat
+	cursor: pointer
+	height: 2.0em
+	width: 80px
+	margin: 0px 0 0 -40px
+	line-height: 60px
+	position: absolute
+	left: 50%
+	bottom: 0px
+	color: #fff
+	text-align: center
+	font-size: 70px
+	z-index: 100
+	text-decoration: none
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4)
+	animation: scroll-arrow 2s ease-in-out infinite
+}
+/*animated scroll arrow animation*/
+@keyframes scroll-arrow {
+	0% {
+		transform: translate(0, -20px)
+		opacity: 0
+	}
+	50% {
+		opacity: 1
+	}
+	100% {
+		transform: translate(0, 20px)
+		opacity: 0
+	}
+}

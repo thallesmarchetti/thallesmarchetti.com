@@ -1,0 +1,98 @@
+.profile-img
+    column(.50)
+    img
+        height 250px
+        width 250px
+        margin 1.8rem auto
+        display block
+    +below(768px)
+        stack()
+        img
+            height 250px
+            width 250px
+            margin 1.8rem auto
+            display block
+    +below(480px)
+        stack()
+        img
+            height 250px
+            width 250px
+            margin 1.8rem auto
+            display block
+.profile-text
+    column(.50)
+    h2
+        font-size 1.4rem
+        font-weight regular
+        text-align: justify
+    p
+        line-height 2
+        font-size 1.25rem
+        font-weight light
+        text-align: justify
+    +below(768px)
+        stack()
+        h2
+            font-size 1.3rem
+            font-weight regular
+        p
+            line-height 2
+            font-size 1.25rem
+            font-weight light
+    +below(480px)
+        stack()
+        h2
+            font-size 1.25rem
+            font-weight regular
+            margin 15px
+        p
+            line-height 2
+            font-size 1.15rem
+            font-weight light
+            margin 15px
+
+.projects
+    column(.40)
+    width 45%
+    margin 30px
+    display inline-block
+    position relative
+    +below(768px)
+        stack()
+        width 80%
+    +below(480px)
+        stack()
+        width 90%
+    h2
+        font-size 1.4rem
+        font-weight regular
+        text-align: justify
+    ul.project-list
+        line-height 2
+        font-size 1.25rem
+        font-weight light
+        text-align: justify
+        margin-left -20px
+        +below(768px)
+            stack()
+            margin-left -10px
+            font-size 1.25rem
+        +below(480px)
+            stack()
+            margin-left -5px
+            font-size 1.2rem
+
+.img-rounded
+    border-radius 50%
+
+a.profile-anchor
+	text-decoration none
+	color #4D6EAE
+
+u.dashed
+	border-bottom 2px dashed #4D6EAE
+	text-decoration none
+	&:hover
+		background-color #4D6EAE
+		animation shady 4s linear infinite
+		color #fff

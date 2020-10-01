@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		{% include "includes/head.njk" %}
+	</head>
+
+	<body id="success">
+		<h1 class="success-title">Retornarei contato em breve!</h1>
+		<div class="row">
+			<div class="social">
+				<ul class="social-list">
+					<li>
+						<a href="https://github.com/thallesmarchetti" target="_blank" rel="noopener"
+							class="social-media-icon"><img src="images/svg/circle_github.svg" alt="ícone do GitHub"></a>
+					</li>
+					<li>
+						<a href="http://linkedin.com/in/thalles-marchetti" target="_blank" rel="noopener"
+							class="social-media-icon"><img src="images/svg/circle_linkedin.svg" alt="ícone do Linkedin"></a>
+					</li>
+					<li>
+						<a href="https://api.whatsapp.com/send?phone=5521970065037&amp" target="_blank" rel="noopener"
+							class="social-media-icon"><img src="images/svg/circle_whatsapp.svg" alt="ícone do whatsapp"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		{# important scripts #}
+		<script>
+			setTimeout(() => {
+				window.location.href = 'index.html';
+			}, 21000);
+
+			function startTimer(duration) {
+				var timer = duration,
+					seconds;
+				setInterval(() => {
+					seconds = parseInt(timer % 60, 10);
+					seconds = seconds < 10
+						? "0" + seconds
+						: seconds;
+				}, 1000);
+			}
+			window.onload = () => {
+				var tenSeconds = 20,
+					display = document.querySelector('#time');
+				startTimer(tenSeconds, display);
+			};
+		</script>
+	</body>
+</html>

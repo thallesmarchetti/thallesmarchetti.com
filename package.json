@@ -1,0 +1,60 @@
+{
+  "name": "thallesmarchetti.com",
+  "version": "2.0.0",
+  "description": "my first own website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint app/javascript/*.js",
+    "fix": "./node_modules/.bin/eslint --fix app/javascript/*.js",
+    "test": "npm run lint && npm test",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "frontend",
+    "open",
+    "source"
+  ],
+  "author": "Thalles Marchetti <linkmarchetti@gmail.com> (http://thallesmarchetti.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer-stylus": "^0.14.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "jeet": "^7.2.0",
+    "kouto-swiss": "^1.1.0",
+    "merge-stream": "^2.0.0",
+    "rupture": "^0.7.1",
+    "stylus": "^0.54.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thallesmarchetti/thallesmarchetti.com.br.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thallesmarchetti/thallesmarchetti.com.br/issues"
+  },
+  "homepage": "https://github.com/thallesmarchetti/thallesmarchetti.com.br#readme",
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "jquery-mask-plugin": "^1.14.15",
+    "npm": "^6.0.0",
+    "scrollreveal": "^4.0.5"
+  }
+}
