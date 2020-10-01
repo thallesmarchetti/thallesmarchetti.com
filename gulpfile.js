@@ -75,8 +75,8 @@ gulp.task('manifest', () => {
 
 gulp.task('themes', () => {
 	return mergeStream(
-		gulp.src('app/Themes')
-			.pipe(gulp.dest('public/'))
+		gulp.src('app/Themes/**/*')
+			.pipe(gulp.dest('public/Themes'))
 	);
 });
 
