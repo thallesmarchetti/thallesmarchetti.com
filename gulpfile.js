@@ -73,6 +73,13 @@ gulp.task('manifest', () => {
 	);
 });
 
+gulp.task('manifest', () => {
+	return mergeStream(
+		gulp.src('app/Themes')
+			.pipe(gulp.dest('public/'))
+	);
+});
+
 gulp.task('watch', done => {
 	gulp.watch('app/views/**/*.njk', gulp.parallel(['nunjucks']));
 	gulp.watch('app/stylus/**/*.styl', gulp.parallel(['stylus']));
