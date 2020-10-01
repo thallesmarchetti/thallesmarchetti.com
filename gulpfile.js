@@ -73,7 +73,7 @@ gulp.task('manifest', () => {
 	);
 });
 
-gulp.task('manifest', () => {
+gulp.task('themes', () => {
 	return mergeStream(
 		gulp.src('app/Themes')
 			.pipe(gulp.dest('public/'))
@@ -107,4 +107,4 @@ gulp.task('browser-sync', () => {
 
 
 gulp.task('default', gulp.series('nunjucks', 'js', 'stylus', 'images', 'vendor', 'watch', 'browser-sync'));
-gulp.task('build', gulp.series('nunjucks', 'js', 'stylus', 'images', 'vendor', 'manifest'));
+gulp.task('build', gulp.series('nunjucks', 'js', 'stylus', 'images', 'vendor', 'manifest', 'themes'));
